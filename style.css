@@ -1,13 +1,25 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #eee;
   font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .top-bar {
   display: flex;
   justify-content: space-between;
   width: 87%;
-  margin: auto;
+  margin: 1% auto;
   justify-items: center;
 }
 
@@ -20,6 +32,106 @@ body {
 .nav-links {
   display: flex;
   justify-content: space-evenly;
+  justify-items: center;
   list-style: none;
   gap: 70px;
+  margin-top: 3%;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.email-form h1 {
+  margin: 1%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input[type=email] {
+  padding: 5px; 
+}
+
+.submit-btn {
+  margin: auto;
+  width: 60%;
+}
+input[type=submit] {
+    width: 100%;
+    margin-top: 3%;
+    background-color: #f1c40f;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.features {
+  width: 70%;
+  margin: 7% auto;
+}
+
+.each-feature {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  align-items: center;
+  margin: 7% auto;
+}
+
+.youtube-video {
+  width: 40%;
+  margin: 5% auto;
+}
+
+.pricing {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  gap: 15px;
+  margin: 5% auto;
+}
+
+.price-box {
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.price-head {
+  background-color: #ddd;
+  padding: 3% 0;
+}
+
+.price-btn {
+  margin: 3% auto;
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+  padding: 2% 9%;
+  font-size: 18px;
+}
+
+footer {
+  width: 90%;
+  background-color: #ddd;
+  margin: 2% auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+  padding: 3%;
+}
+.links-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
