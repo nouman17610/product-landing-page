@@ -27,6 +27,11 @@ a {
   margin-top: 10px;
   font-size: 30px;
   font-weight: bold;
+  color: black;
+}
+
+.brand-name a {
+  color: black;
 }
 
 .nav-links {
@@ -36,6 +41,14 @@ a {
   list-style: none;
   gap: 70px;
   margin-top: 3%;
+}
+
+.nav-links a {
+  color: black;
+}
+
+.nav-links a:hover {
+  color: orangered;
 }
 
 .email-form {
@@ -64,17 +77,26 @@ input[type=email] {
   width: 60%;
 }
 input[type=submit] {
-    width: 100%;
-    margin-top: 3%;
-    background-color: #f1c40f;
-    font-weight: bold;
-    font-size: 20px;
+  width: 100%;
+  margin-top: 3%;
+  background-color: #f1c40f;
+  font-weight: bold;
+  font-size: 20px;
 }
+
+input[type=submit]:hover {
+  color: orangered;
+} 
 
 .features {
   width: 70%;
   margin: 7% auto;
 }
+
+#features .feature-icon {
+  color: darkorange;
+}
+
 
 .each-feature {
   display: grid;
@@ -109,12 +131,24 @@ input[type=submit] {
   padding: 3% 0;
 }
 
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .price-btn {
   margin: 3% auto;
   background-color: #f1c40f;
   border-color: #f1c40f;
   padding: 2% 9%;
   font-size: 18px;
+}
+
+.price-btn a {
+  color: black;
+}
+.price-btn a:hover {
+  color: orangered;
 }
 
 footer {
@@ -135,3 +169,8 @@ footer {
   display: flex;
   gap: 15px;
 }
+
+.links-list a {
+  text-decoration: none;
+}
+
