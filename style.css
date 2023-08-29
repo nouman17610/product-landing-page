@@ -174,3 +174,16 @@ footer {
   text-decoration: none;
 }
 
+@media (max-width:768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .brand-name {
+    text-align: center;
+  }
+
+  .email-form {
+    text-align: center;
+  }
+}
